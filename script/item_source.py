@@ -166,7 +166,7 @@ def format_wiki_source(source, item_id=None):
     if source[0] in ['gathering', 'salvaging']:
         scene = get_scene_name(source[1])
         if scene == '_main_':
-            return ['gathering']
+            return [source[0]]
         else:
             return ['location', scene]
 
